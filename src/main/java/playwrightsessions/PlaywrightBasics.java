@@ -10,7 +10,15 @@ public class PlaywrightBasics {
 
         Playwright playwright = Playwright.create();
 
+        //For Chrome browser
         Browser browser = playwright.chromium().launch();
+
+        //For Firefox browser
+        //Browser browser = playwright.firefox().launch();
+
+        //For Safari browser
+        //Browser browser = playwright.webkit().launch();
+
         Page page = browser.newPage();
         page.navigate("https://www.google.com");
 
