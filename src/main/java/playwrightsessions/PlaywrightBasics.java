@@ -11,8 +11,14 @@ public class PlaywrightBasics {
 
         Playwright playwright = Playwright.create();
 
+        //For Chromium browser. Disabled headless state to view the browser
+        //Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+
         //For Chrome browser. Disabled headless state to view the browser
-        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions();
+        launchOptions.setChannel("chrome");
+        launchOptions.setHeadless(false);
+        Browser browser = playwright.chromium().launch(launchOptions);
 
         //For Firefox browser
         //Browser browser = playwright.firefox().launch();
