@@ -1,6 +1,7 @@
 package playwrightsessions;
 
 import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
@@ -10,8 +11,8 @@ public class PlaywrightBasics {
 
         Playwright playwright = Playwright.create();
 
-        //For Chrome browser
-        Browser browser = playwright.chromium().launch();
+        //For Chrome browser. Disabled headless state to view the browser
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 
         //For Firefox browser
         //Browser browser = playwright.firefox().launch();
