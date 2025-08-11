@@ -27,6 +27,7 @@ public class PlaywrightBasics {
         //Browser browser = playwright.webkit().launch();
 
         Page page = browser.newPage();
+        //page.pause();     //Will pause the page
         page.navigate("https://www.google.com");
 
         System.out.println("Playwright started successfully");
