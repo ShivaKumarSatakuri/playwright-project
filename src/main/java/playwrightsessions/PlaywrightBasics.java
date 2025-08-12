@@ -5,6 +5,7 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
+//TODO : Need to refactor project framework. Change it to typescript from java
 public class PlaywrightBasics {
 
     public static void main(String... args) {
