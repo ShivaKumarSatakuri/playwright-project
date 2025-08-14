@@ -1,0 +1,29 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "description": "<h6>Creating this project to gain working knowledge on playwright</h6>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShivaKumarSatakuri/playwright-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShivaKumarSatakuri/playwright-project/issues"
+  },
+  "homepage": "https://github.com/ShivaKumarSatakuri/playwright-project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
+    "eslint": "^9.33.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
