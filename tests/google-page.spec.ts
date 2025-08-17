@@ -4,7 +4,7 @@ import test, { Browser, firefox, Locator, Page } from "@playwright/test";
 test('Google page test', async () => {
     const browser: Browser = await firefox.launch({ headless: false });
     const page: Page = await browser.newPage();
-    await page.goto("https://www.google.com/")
+    await page.goto('https://www.google.com/')
 
     //TODO:  Need to work on locators
     //const inputTextBox : Locator = await page.locator('xpath=/html/body/div[2]/div[4]/form/div[1]/div[1]/div[1]/div[1]/div[2]/textarea')
