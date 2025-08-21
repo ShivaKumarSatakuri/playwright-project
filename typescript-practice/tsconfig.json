@@ -1,9 +1,15 @@
+/* 
+Here are the commands to create tsconfig.json file
+ -> tsc --init    // Will create tscconfig.json file and dist directory. From now, all compiled .js files wil be put here
+ -> tsc           // Will compile all the .tsc files and put them in .dist directory
+ */
+
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    "rootDir": "./src",
-     "outDir": "./dist",
+    "rootDir": "./src",     // We must place all our source files in this folder
+     "outDir": "./dist",    // All compiled .tsc files will be transpiled to .js files and placed here
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
