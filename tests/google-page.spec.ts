@@ -16,6 +16,7 @@ test('Google page test', async () => {
     await page.waitForTimeout(20000)
 
     page.locator('xpath=/html/body/div[3]/div/div[12]/div/div[2]/div[2]/div/div/div[1]/div/div/div/div[1]/div/div/span/a/h3').click
+
     page.close();
     browser.close();
 })
