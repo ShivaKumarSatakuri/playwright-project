@@ -8,25 +8,27 @@ Here are the commands to create tsconfig.json file
   "compilerOptions": {
     // File Layout
     "rootDir": "./src", // We must place all our source files in this folder
-    "outDir": "./typescript-practice/dist", // All compiled .tsc files will be transpiled to .js files and placed here
+    "outDir": "./dist", // All compiled .tsc files will be transpiled to .js files and placed here
+
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    //"module": "nodenext",
-    //"target": "esnext",
-    "module": "ESNext",
-    "target": "ES2020",
+    "module": "nodenext",
+    "target": "es2020",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
     // and npm install -D @types/node
+
     // Other Outputs
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
+
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
+
     // Style Options
     // "noImplicitReturns": true,
     // "noImplicitOverride": true,
@@ -34,10 +36,10 @@ Here are the commands to create tsconfig.json file
     // "noUnusedParameters": true,
     // "noFallthroughCasesInSwitch": true,
     // "noPropertyAccessFromIndexSignature": true,
+
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
